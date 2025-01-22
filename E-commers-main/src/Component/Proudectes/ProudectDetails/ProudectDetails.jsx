@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Cardsst from "../CardStyle/Cardsst"
+import { Button } from "react-bootstrap"
 
 
 const ProudectDetails = () => {
@@ -16,6 +17,8 @@ const ProudectDetails = () => {
     <>
       <h2>Hello everybody </h2>
       <Cardsst  proudcet ={proudectes} ShowButton={false} />
+
+      <Link  to={'/'}>Back</Link>
    
     </>
   )

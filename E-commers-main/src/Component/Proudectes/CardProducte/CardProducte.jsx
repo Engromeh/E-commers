@@ -19,13 +19,11 @@ const CardProducte = () => {
   };
 
   const filtercategory = (catename) => {
-    console.log(catename);
     fetch(`https://fakestoreapi.com/products/category/${catename}`)
       .then((response) => response.json())
-      .then((data) => 
-        //SET PROUDUCTE IMP 
-        setproudcetes(data));
+      .then((data) => setproudcetes(data));
   };
+
   useEffect(() => {
     getproudect();
     getcategory();
@@ -33,32 +31,29 @@ const CardProducte = () => {
 
   return (
     <>
-     <Button onClick={()=>{ getproudect()}}>ALL</Button>
-      {category.map((cate) => {
-        return (
-          <>
+      <div className="text-center mb-4 p-4" >
+        <Button variant="outline-primary" onClick={() => getproudect()}>
+          All
+        </Button>
+        {category.map((cate) => (
           <Button
             key={cate}
-            onClick={() => {
-              filtercategory(cate);
-            }}
+            variant="outline-secondary"
+            onClick={() => filtercategory(cate)}
+            className="mx-2"
           >
             {cate}
           </Button>
-         
-          </>
-        );
-      })}
-      <h2 className="text-center p-3">Our productes</h2>
+        ))}
+      </div>
+      <h2 className="text-center mb-4">Our Products</h2>
       <div className="container">
         <div className="row">
-          {proudcetes.map((proudcet) => {
-            return (
-              <div className="col-3" key={proudcet.id}>
-                <Cardsst proudcet={proudcet} ShowButton={true} />
-              </div>
-            );
-          })}
+          {proudcetes.map((proudcet) => (
+            <div className="col-lg-4 col-md-4 col-sm-6" key={proudcet.id}>
+              <Cardsst proudcet={proudcet} ShowButton={true} />
+            </div>
+          ))}
         </div>
       </div>
     </>
