@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import Cardsst from "../Cardsst/Cardsst"
+import Cardsst from "../CardStyle/Cardsst"
 
 
 const ProudectDetails = () => {
     const[proudectes ,setproudectes]=useState([])
+    const Params=useParams()
+
     useEffect(()=>{
         fetch(`https://fakestoreapi.com/products/${Params.proudectId}`)
        .then((response) => response.json())
        .then((proudectes) => setproudectes(proudectes))
     },[])
-    const Params=useParams()
   return (
     <>
       <h2>Hello everybody </h2>

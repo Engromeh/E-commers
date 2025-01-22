@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import CardProducte from "./Component/CardProducte/CardProducte";
 import Navbar from "./Component/Navbar/Navbar";
 import Slider from "./Component/Slider/Slider";
-import ProudectDetails from "./Component/ProudectDetails/ProudectDetails";
 import Aboutus from "./Component/AboutUs/Aboutus";
+import CardProducte from "./Component/Proudectes/CardProducte/CardProducte";
+import ProudectDetails from "./Component/Proudectes/ProudectDetails/ProudectDetails";
 
 function App() {
   return (

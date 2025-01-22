@@ -9,7 +9,7 @@ const Cardsst = (props) => {
         <div className="card-body">
           <h5 className="card-title">{proudcet.name}</h5>
           <p className="card-text">{proudcet.description}</p>
-
+{ShowButton&&
           <Link
             href="#"
             className="btn btn-primary"
@@ -17,6 +17,7 @@ const Cardsst = (props) => {
           >
             Detalis
           </Link>
+}
         </div>
       </div>
     </>
