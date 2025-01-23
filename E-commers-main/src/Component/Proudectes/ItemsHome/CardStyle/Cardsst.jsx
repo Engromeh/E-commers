@@ -3,7 +3,7 @@ import './Cardstyle.css'
 const Cardsst = (props) => {
   const { proudcet, ShowButton } = props;
   return (
-    <div className="card" style={{ width: "23rem" }}>
+    <div className="card  justify-content-center" style={{ width: "23rem" }}>
       <img src={proudcet.image} className="card-img-top" alt={proudcet.title} />
       <div className="card-body">
         <h5 className="card-title">{proudcet.title}</h5>

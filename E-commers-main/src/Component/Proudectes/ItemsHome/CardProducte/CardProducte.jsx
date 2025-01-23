@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Cardsst from "../CardStyle/Cardsst";
+import Cardsst from "../../ItemsHome/CardStyle/Cardsst";
 import { Button } from "react-bootstrap";
 
 const CardProducte = () => {
@@ -7,7 +7,7 @@ const CardProducte = () => {
   const [category, setcategory] = useState([]);
 
   const getproudect = () => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("http://localhost:3000/porudect")
       .then((response) => response.json())
       .then((data) => setproudcetes(data));
   };
@@ -31,7 +31,7 @@ const CardProducte = () => {
 
   return (
     <>
-      <div className="text-center mb-4 p-4" >
+      <div className="text-center mb-2 p-4" >
         <Button variant="outline-primary" onClick={() => getproudect()}>
           All
         </Button>

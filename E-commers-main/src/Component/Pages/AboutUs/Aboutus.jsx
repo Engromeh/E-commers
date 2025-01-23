@@ -7,6 +7,8 @@ const Aboutus = () => {
       Our mission is to provide an exceptional online shopping experience by
       combining top-notch products, unbeatable prices, and unparalleled customer
       service
+      {/* <Link  to={'/'}>Back</Link> */}
+
     </>
   );
 };
