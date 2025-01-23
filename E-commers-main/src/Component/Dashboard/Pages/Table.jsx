@@ -15,7 +15,7 @@ const Table = () => {
   useEffect(() => {
     allitems();
   }, []);
-
+//very important
   const deletitem = (proudectId) => {
     Swal.fire({
       title: `Are you sure you want to delete this item?`,

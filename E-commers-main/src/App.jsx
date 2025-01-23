@@ -1,14 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Sidebar from "./Component/Dashboard/Sidebar";
+import Sidebar from "./Component/Dashboard/Pages/Sidebar";
 import Navbar from "./Component/Pages/Navbar/Navbar";
  import Aboutus from "./Component/Pages/AboutUs/Aboutus";
  import ProudectDetails from "./Component/Proudectes/ItemsDetelis/ProudectDetails/ProudectDetails";
- import Dashboard from "./Component/Dashboard/Dashboard";
+ import Dashboard from "./Component/Dashboard/Pages/Dashboard";
  import Slider from "./Component/Pages/Slider/Slider";
  import View from "./Component/Dashboard/Operations/View";
 import CardProducte from "./Component/Proudectes/ItemsHome/CardProducte/CardProducte";
-import Carddetails from "./Component/Proudectes/ItemsDetelis/Carddetails/Carddetails";
 
 function App() {
   return (

@@ -31,7 +31,7 @@ const CardProducte = () => {
 
   return (
     <>
-      <div className="text-center mb-2 p-4" >
+      <div className="text-center  p-5" >
         <Button variant="outline-primary" onClick={() => getproudect()}>
           All
         </Button>
@@ -46,7 +46,7 @@ const CardProducte = () => {
           </Button>
         ))}
       </div>
-      <h2 className="text-center mb-4">Our Products</h2>
+      <h2 className="text-center mb-3">Our Products</h2>
       <div className="container">
         <div className="row">
           {proudcetes.map((proudcet) => (

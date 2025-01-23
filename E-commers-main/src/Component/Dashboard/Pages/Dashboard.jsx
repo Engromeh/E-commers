@@ -1,5 +1,5 @@
-import Navbar from "../Pages/Navbar/Navbar";
-import Table from "./Table";
+import Navbar from "../../Pages/Navbar/Navbar";
+import Table from "../Pages/Table";
 const Dashboard = () => {
   return (
     <>
