@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Carddetails from "../../Proudectes/ItemsDetelis/Carddetails/Carddetails";
 
 const View = () => {
@@ -14,6 +14,9 @@ const View = () => {
   return (
     <>
       <Carddetails proudectes={Viewpro} />
+      <Link    className="btn btn-info btn-sm"    to={"/Dashbord"} style={{ marginTop: "-55px", textDecoration: "none" ,  marginLeft:"72%" }}>
+        Back
+      </Link>
     </>
   );
 };

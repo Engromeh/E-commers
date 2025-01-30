@@ -20,8 +20,9 @@ const ProudectDetails = () => {
     <>
       <h2>Hello everybody</h2>
       <Carddetails proudectes={proudectes} />
-      <Link to={"/"}>Back</Link>
-    </>
+<Link    className="btn btn-info btn-sm"    to={"/"} style={{ marginTop: "-25px", textDecoration: "none" }}>
+        Back
+      </Link>    </>
   );
 };
 

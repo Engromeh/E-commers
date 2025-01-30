@@ -37,7 +37,7 @@ const Table = () => {
 
   return (
     <div style={{ margin: "8rem auto", maxWidth: "90%" }}>
-      <button className="btn btn-primary mb-4">Add New Product</button>
+      <Link className="btn btn-primary mb-4" to={"/Add"} >Add New Product</Link>;
 
       <table className="table table-striped table-hover">
         <thead>
@@ -62,7 +62,8 @@ const Table = () => {
                   >
                     View
                   </Link>
-                  <button className="btn btn-info btn-sm">Edit</button>
+                  <Link className="btn btn-info btn-sm"                     to={`/proudect/${pr.id}`}
+>Edit</Link>
                   <button
                     className="btn btn-danger btn-sm"
                     onClick={() => deletitem(pr.id)}
