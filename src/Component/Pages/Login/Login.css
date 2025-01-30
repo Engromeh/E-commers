@@ -1,0 +1,27 @@
+.login-container {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-primary {
+    background-color: #2575fc;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2575fc;
+  }
+  
