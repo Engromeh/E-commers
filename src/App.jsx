@@ -11,6 +11,7 @@ import CardProducte from "./Component/Proudectes/ItemsHome/CardProducte/CardProd
 import Add from "./Component/Dashboard/Operations/Add";
 import Edit from "./Component/Dashboard/Operations/Edit";
 import Login from "./Component/Pages/Login/Login";
+import Register from "./Component/Pages/Register/Register";
 
 function App() {
   const location = useLocation(); 
@@ -33,6 +34,9 @@ function App() {
             <Route path="/about" element={<Aboutus />} />
             <Route path="/proudect/:proudectId" element={<Edit />} />
             <Route path="/" element={<Login />} />
+            <Route
+              path="/Register"
+              element={<Register />} />
 
             <Route
               path="/Home"

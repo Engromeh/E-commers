@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
-  
-   
 
 
       const handlelogin =() => {
@@ -57,6 +55,8 @@ const Login = () => {
           <button type="submit" className="btn btn-primary w-100">
             Login
           </button>
+
+          <p className="text-center mt-4">I don't have your account?<Link to={"/Register"}>Register</Link></p>
         </form>
       </div>
     </div>
