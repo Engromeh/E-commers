@@ -23,16 +23,10 @@ const Carddetails = (props) => {
         }}
       >
         <img
-          className="card-img-top"
+          className="carddetails-img card-img-top"
           src={proudectes.image}
           alt={proudectes.title}
-          style={{
-            height: "322px",
-            objectFit: "cover",
-            width: "68%", 
-            marginLeft:"18%",
- 
-          }}
+       
         />
 
         <div className="card-body">
@@ -58,6 +52,12 @@ const Carddetails = (props) => {
             Count: {proudectes.count}
           </li>
         </ul>
+        <div className="d-flex justify-content-center p-2">
+
+        <button className="btn btn-primary w-50">Add to Cart</button>
+
+        </div>
+
       </div>
 
       

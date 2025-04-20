@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -21,7 +20,7 @@ const Login = () => {
         }
   return (
     <div className="login-container d-flex justify-content-center align-items-center vh-100">
-      <div className="card p-4 shadow-lg rounded" style={{ width: "25rem" }}>
+      <div className="card-login p-4 shadow-lg rounded" style={{ width: "25rem" }}>
         <h2 className="text-center mb-4 text-primary">Login</h2>
         <form  onSubmit={handlelogin}>
           <div className="mb-3">

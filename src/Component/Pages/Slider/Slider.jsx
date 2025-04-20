@@ -1,9 +1,7 @@
 
-import './Slider.css'
-
 const Slider = () => {
   return (
-    <div id="carouselExample" className="carousel slide">
+    <div id="carouselExample" className="carousel slide w-100">
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img src="{img1}" className="d-block w-100" alt="..."/>
